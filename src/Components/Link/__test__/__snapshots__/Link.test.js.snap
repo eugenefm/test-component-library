@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<a
+  className="sc-bdVaJa bxyBnR"
+  color="blue"
+  fontFamily="main"
+  href="https://google.com"
+>
+  Call to action
+</a>
+`;

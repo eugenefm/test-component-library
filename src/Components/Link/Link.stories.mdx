@@ -1,0 +1,21 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+import Link from './Link';
+
+<Meta title='Link' component={Link} />
+
+# Link
+
+## Properties
+
+<Props of={Link} />
+
+## Basic usage
+
+<Preview>
+	<Story name='Primary'>
+		<Link href="https://google.com" target="_blank">
+			Call to Action
+		</Link>
+	</Story>
+</Preview>

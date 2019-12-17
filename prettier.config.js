@@ -5,7 +5,6 @@ module.exports = {
 	singleQuote: true,
 	jsxSingleQuote: true,
 	semi: true,
-	trailingComma: 'es5',
 	bracketSpacing: true,
 	jsxBracketSameLine: false,
 	arrowParens: 'always',
@@ -13,8 +12,8 @@ module.exports = {
 		{
 			files: '*.md',
 			options: {
-				parser: 'markdown',
-			},
-		},
-	],
+				parser: 'markdown'
+			}
+		}
+	]
 };
