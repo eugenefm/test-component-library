@@ -21,6 +21,8 @@ const Link = (props) => {
 	);
 };
 
-Link.propTypes = {};
+Link.propTypes = {
+	children: PropTypes.node.isRequired
+};
 
 export default Link;

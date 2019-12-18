@@ -30,14 +30,9 @@ const StyledButton = styled('button')(
 );
 
 const Button = (props) => {
-	const { children, ariaLabel, onClick, variant } = props;
+	const { children, onClick, variant, ...others } = props;
 	return (
-		<StyledButton
-			variant={variant}
-			fontSize={0}
-			onClick={onClick}
-			aria-label={ariaLabel}
-		>
+		<StyledButton variant={variant} fontSize={0} onClick={onClick} {...others}>
 			{children}
 		</StyledButton>
 	);
@@ -45,7 +40,6 @@ const Button = (props) => {
 
 Button.propTypes = {
 	children: PropTypes.node.isRequired,
-	ariaLabel: PropTypes.string,
 	onClick: PropTypes.func.isRequired,
 	variant: PropTypes.string
 };

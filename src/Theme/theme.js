@@ -1,6 +1,6 @@
 export default {
 	colors: {
-		black: '#000e1a',
+		black: 'hsl(231, 20%, 20%)',
 		white: 'hsl(231, 50%, 98%)',
 		blue: 'hsl(231, 99%, 60%)',
 		navy: '#004175'

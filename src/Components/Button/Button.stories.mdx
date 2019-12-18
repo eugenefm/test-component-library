@@ -6,17 +6,20 @@ import Button from './Button';
 <Meta title='Button' component={Button} />
 
 # Button
+This is the button that I made, isn't it awesome.
 
 ## Properties
+Here are all the props that it takes, which are automatically defined using `propTypes` and `defaultProps`.
 
 <Props of={Button} />
 
 ## Basic usage
+Indendation on the code preview looks a little broken in the current version of Storybook - [see this issue](https://github.com/storybookjs/storybook/issues/8078).
 
 <Preview>
 	<Story name='Primary Button'>
 		<Button 
-			ariaLabel='Call to Action' 
+			aria-label='Call to Action' 
 			onClick={action('Button Click')}
 		>
 			Call to Action
@@ -25,22 +28,24 @@ import Button from './Button';
 	<Story name='Secondary Button'>
 		<Button 
 			variant='secondary' 
-			ariaLabel='Call to Action' 
+			aria-label='Call to Action' 
 			onClick={action('Button Click')}
 		>
 			Call to Action
 		</Button>
 	</Story>
-	<Story name='Button with Knobs' decorators={[withKnobs]}>
-		<Button 
-			variant={select('Variant', {
-				primary: 'primary',
-				secondary: 'secondary'
-			}, 'primary')} 
-			ariaLabel='Call to Action' 
-			onClick={action('Button Click')}
-		>
-			{text('Text','Call to Action')}
-		</Button>
-	</Story>
 </Preview>
+
+This additional story will be hidden from the docs in `Storyboook 5.3.0`
+<Story name='Button with Knobs' parameters={{ docs: { disable: true }}}>
+	<Button 
+		variant={select('Variant', {
+			primary: 'primary',
+			secondary: 'secondary'
+		}, 'primary')} 
+		aria-label='Call to Action' 
+		onClick={action('Button Click')}
+	>
+		{text('Text','Call to Action')}
+	</Button>
+</Story>
