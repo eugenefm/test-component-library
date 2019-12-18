@@ -46,7 +46,8 @@ const Button = (props) => {
 Button.propTypes = {
 	children: PropTypes.node.isRequired,
 	ariaLabel: PropTypes.string,
-	onClick: PropTypes.func.isRequired
+	onClick: PropTypes.func.isRequired,
+	variant: PropTypes.string
 };
 
 Button.defaultProps = {
