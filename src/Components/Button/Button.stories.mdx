@@ -37,7 +37,7 @@ Indendation on the code preview looks a little broken in the current version of 
 </Preview>
 
 This additional story will be hidden from the docs in `Storyboook 5.3.0`
-<Story name='Button with Knobs' parameters={{ docs: { disable: true }}}>
+<Story name='Button with Knobs' parameters={{ docs: { disable: true }}}  decorators={[withKnobs]}>
 	<Button 
 		variant={select('Variant', {
 			primary: 'primary',
